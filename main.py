@@ -15,7 +15,7 @@ def main():
 @app.route("/ask")
 def ask():
     try:
-        llm = OpenAI(temperature=0.7)
+        llm = OpenAI(temperature=1)
         text = "Tell me a joke about artificial intelligence."
         response = llm(text)
         return response
